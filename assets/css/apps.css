@@ -1,9 +1,9 @@
-  /* Define custom properties for width, height, and colors */
+/* Define custom properties for width, height, and colors */
   :root {
     --box-width: 50px;
     --box-height: 20px;
-    --box-background: #282828;
-    --box-text-color: white;
+    --box-background: purple;
+    --box-text-color: yellow;
   }
 
   h1 {

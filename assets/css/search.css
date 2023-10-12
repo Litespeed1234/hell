@@ -1,28 +1,66 @@
-body{
-  background-color:black;
-}
-#uv-form {
-  text-align: center;
-  margin: 20px auto; 
-  max-width: 400px; 
+/* Define custom properties for width, height, and colors */
+  :root {
+    --box-width: 50px;
+    --box-height: 20px;
+    --box-background: purple;
+    --box-text-color: yellow;
+  }
+
+  h1 {
+  display: inline-block;
+  margin-right: 10px;
+  padding: var(--box-height) var(--box-width);
+  border: 2px solid #333;
+  border-radius: 5px;
+  color: var(--box-text-color);
+  background-color: var(--box-background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 20px;
 }
 
-/* eh */
+
+  h1:hover {
+    background-color: black;
+    color: grey;
+  }
+
+  body {
+    background-color: black;
+  }
+  
+@media screen and (max-width: 220px) {
+    h1 {
+      display: block;
+      margin-bottom: 10px; /*line i think between h1 elements */
+    }
+}
+
+body{
+background-color:black; /* added this line */
+}
+#uv-form {
+text-align:center; /* changed from left to center */
+margin:auto; /* changed from margin-left to margin-auto */
+max-width:400px; 
+}
+
 #uv-address {
-  padding: 10px; 
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  width: 100%; 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  background-color:#111;
-  color: #fff;
+padding:10px; 
+border:none;
+border-radius:5px;
+font-size:16px;
+width:100%; 
+box-shadow:0 0 5px rgba(0,0,0,0.3);
+background-color:#111;
+color:#fff;
 }
 
 #uv-address::placeholder {
-  color: white; 
-  opacity: 0.7; 
+color:white; 
+opacity:.7; 
 }
+
 #uv-search-engine {
-  display: none; 
+display:none; 
 }
+
